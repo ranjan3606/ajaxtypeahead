@@ -38,7 +38,7 @@ function dataMatch(){
 }
 
 fDatas.addEventListener('change', dataMatch)
-fDatas.addEventListener('keyup', dataMatch)
+// fDatas.addEventListener('keyup', dataMatch)
 
 
 
