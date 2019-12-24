@@ -19,19 +19,19 @@ function dataMatch(){
     const html = dataMatches.map(place => {
         const datas = new RegExp(this.value, 'gi');
         const cityName  = place.city.replace(datas, `<span class="h1">${this.value}</span>`)
-        // const stateName = place.state.replace(datas, `<span class="h1">${this.value}</span>`)
-        // const populations = place.population.replace(datas, `<span class="h1">${this.value}</span>`)
-        // const ranks = place.rank.replace(datas, `<span class="h1">${this.value}</span>`)
+        const stateName = place.state.replace(datas, `<span class="h1">${this.value}</span>`)
+        const populations = place.population.replace(datas, `<span class="h1">${this.value}</span>`)
+        const ranks = place.rank.replace(datas, `<span class="h1">${this.value}</span>`)
 
 
-        // return `
-        //     <li>
-        //         <h3 class="name">City<p>${cityName}</p></h3>
-        //         <h4 class="name">State<p>${stateName}</p> </h4>
-        //         <h4 class="population"> Population <p>${populations}</p> </h4>
-        //         <h4 class="population"> Rank <p>${ranks}</p> </h4>
-        //     <li>
-        // `;
+        return `
+            <li>
+                <h3 class="name">City<p>${cityName}</p></h3>
+                <h4 class="name">State<p>${stateName}</p> </h4>
+                <h4 class="population"> Population <p>${populations}</p> </h4>
+                <h4 class="population"> Rank <p>${ranks}</p> </h4>
+            <li>
+        `;
         
     }).join('')
     gData.innerHTML = html
