@@ -37,7 +37,7 @@ function dataMatch(){
     gData.innerHTML = html
 }
 
-// fDatas.addEventListener('change', dataMatch)
+fDatas.addEventListener('change', dataMatch)
 fDatas.addEventListener('keyup', dataMatch)
 
 
