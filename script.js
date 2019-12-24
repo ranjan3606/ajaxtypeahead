@@ -6,7 +6,7 @@ const gData = document.querySelector('.show')
 fetch(url)
 .then(res => res.json())
 .then(data => cityData.push(...data))
-// console.log(cityData)
+console.log(cityData)
 
 function findData(matchCity, cityData){
     return cityData.filter(place => {
